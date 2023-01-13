@@ -1,0 +1,21 @@
+CREATE TABLE store_items (id INTEGER PRIMARY KEY, name TEXT, type text , price integer, quanitity integer );
+
+insert into store_items values (1, 'fruits', 'food', 1, 30);
+SELECT * FROM store_items;
+
+insert into store_items values (2,'veggies','food',2,30);
+insert into store_items values(3,'meat','food',3,20);
+insert into store_items values(4,'dairy','food',4,20);
+insert into store_items values(5,'shoes','apperal',10,20);
+insert into store_items values(6,'shirts','apperal',11,30);
+insert into store_items values(7,'shorts','apperal',11,20);
+insert into store_items values(8,'pants','apperal',11,15);
+insert into store_items values(9,'plates','cooking',3,50);
+insert into store_items values(10,'bowls','cooking',3,60);
+insert into store_items values(11,'utensiles','cooking',2,60);
+insert into store_items values(12,'pans','cooking',5,30);
+insert into store_items values(13,'cups','cooking',1,40);
+insert into store_items values(14,'tv','tech',20,10);
+insert into store_items values(15,'laptops','tech',30,5);
+select * from store_items order by price;
+select sum(price) from store_items;
